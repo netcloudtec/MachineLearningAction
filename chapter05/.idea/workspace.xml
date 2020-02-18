@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4450df8e-fd45-4ddf-9369-25e296fd03d0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/logisticRegression.py" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/logRegres.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectId" id="1WeOO3aNM0a2Y4WsgJdxfcdDJ5O" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.logisticRegression">
+    <configuration name="logRegres" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="chapter05" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/logRegres.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="logisticRegression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="chapter05" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/logisticRegression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.logisticRegression" />
+        <item itemvalue="Python.logRegres" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4450df8e-fd45-4ddf-9369-25e296fd03d0" name="Default Changelist" comment="" />
+      <created>1579506558855</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579506558855</updated>
+      <workItem from="1579506565422" duration="7183000" />
+      <workItem from="1580543108141" duration="11837000" />
+      <workItem from="1580626295677" duration="1000000" />
+      <workItem from="1581411633956" duration="77000" />
+      <workItem from="1582016269690" duration="619000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1440" height="391" key="DebuggerActiveHint" timestamp="1580548902169">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1440" height="391" key="DebuggerActiveHint/0.23.1440.827@0.23.1440.827" timestamp="1580548902169" />
+    <state width="1398" height="180" key="GridCell.Tab.0.bottom" timestamp="1582016611855">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="180" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1582016611855" />
+    <state width="1398" height="180" key="GridCell.Tab.0.center" timestamp="1582016611854">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="180" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1582016611854" />
+    <state width="1398" height="180" key="GridCell.Tab.0.left" timestamp="1582016611853">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="180" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1582016611853" />
+    <state width="1398" height="180" key="GridCell.Tab.0.right" timestamp="1582016611854">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="180" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1582016611854" />
+    <state width="1398" height="376" key="GridCell.Tab.1.bottom" timestamp="1580634705079">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="376" key="GridCell.Tab.1.bottom/0.23.1440.827@0.23.1440.827" timestamp="1580634705079" />
+    <state width="1398" height="376" key="GridCell.Tab.1.center" timestamp="1580634705079">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="376" key="GridCell.Tab.1.center/0.23.1440.827@0.23.1440.827" timestamp="1580634705079" />
+    <state width="1398" height="376" key="GridCell.Tab.1.left" timestamp="1580634705079">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="376" key="GridCell.Tab.1.left/0.23.1440.827@0.23.1440.827" timestamp="1580634705079" />
+    <state width="1398" height="376" key="GridCell.Tab.1.right" timestamp="1580634705079">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="376" key="GridCell.Tab.1.right/0.23.1440.827@0.23.1440.827" timestamp="1580634705079" />
+    <state x="221" y="75" key="SettingsEditor" timestamp="1579506576385">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="221" y="75" key="SettingsEditor/0.23.1440.827@0.23.1440.827" timestamp="1579506576385" />
+    <state x="397" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1581411659604">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="397" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.827@0.23.1440.827" timestamp="1581411659604" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/logRegres.py</url>
+          <line>190</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/logRegres.py</url>
+          <line>191</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/logisticRegression.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="line.strip()" />
+        <watch expression="mat(classLabels)" />
+        <watch expression="mat(classLabels).transpose()" />
+        <watch expression="dataMatrix * weights" />
+        <watch expression="h" />
+        <watch expression="inX" />
+        <watch expression="dataMatrix.transpose(" />
+        <watch expression="dataMatrix.transpose()" />
+        <watch expression="error" />
+        <watch expression="alpha * dataMatrix.transpose() * error" />
+        <watch expression="alpha * dataMatrix.transpose()" />
+        <watch expression="weights + alpha * dataMatrix.transpose() * error" />
+        <watch expression="y" />
+        <watch expression="exp(-inX)" />
+        <watch expression="np.exp(-inX)" />
+        <watch expression="weights[0]" />
+        <watch expression="(-weights[0] - weights[1] * x)" />
+        <watch expression="weights[2]" />
+        <watch expression="dataMatrix[i]" />
+        <watch expression="dataMatrix[i] * weights" />
+        <watch expression="range(m)" />
+        <watch expression="len(currLine)-1" />
+        <watch expression="range(len(currLine)-1)" />
+        <watch expression="float(currLine[-1]" />
+        <watch expression="classifier" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/chapter05$logRegres.coverage" NAME="logRegres Coverage Results" MODIFIED="1580566739859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/chapter05$logisticRegression.coverage" NAME="logisticRegression Coverage Results" MODIFIED="1582016611846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

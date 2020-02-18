@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6a8ac55e-476e-452a-ba60-b3054d5fbe1c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/kNN.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectId" id="1WC46Xu7yvpvY2uD4mhWzyZKxf6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="kNN" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="chapter02" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kNN.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.kNN" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a8ac55e-476e-452a-ba60-b3054d5fbe1c" name="Default Changelist" comment="" />
+      <created>1578640067962</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578640067962</updated>
+      <workItem from="1578640077263" duration="9360000" />
+      <workItem from="1578814456223" duration="151000" />
+      <workItem from="1578918007879" duration="6062000" />
+      <workItem from="1578965968430" duration="7216000" />
+      <workItem from="1578981969221" duration="124000" />
+      <workItem from="1578982112134" duration="1261000" />
+      <workItem from="1578984793224" duration="4964000" />
+      <workItem from="1578993754502" duration="1044000" />
+      <workItem from="1578994966746" duration="146000" />
+      <workItem from="1578995170140" duration="682000" />
+      <workItem from="1579060694287" duration="893000" />
+      <workItem from="1579069319801" duration="80000" />
+      <workItem from="1579078122255" duration="408000" />
+      <workItem from="1579353110427" duration="36000" />
+      <workItem from="1579423832229" duration="31000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1440" height="358" key="DebuggerActiveHint" timestamp="1578986834276">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1440" height="358" key="DebuggerActiveHint/0.23.1440.827@0.23.1440.827" timestamp="1578986834276" />
+    <state x="184" y="193" key="FileChooserDialogImpl" timestamp="1578984961395">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="184" y="193" key="FileChooserDialogImpl/0.23.1440.827@0.23.1440.827" timestamp="1578984961395" />
+    <state width="1398" height="264" key="GridCell.Tab.0.bottom" timestamp="1578992553493">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1578992553493" />
+    <state width="1398" height="264" key="GridCell.Tab.0.center" timestamp="1578992553493">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1578992553493" />
+    <state width="1398" height="264" key="GridCell.Tab.0.left" timestamp="1578992553493">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1578992553493" />
+    <state width="1398" height="264" key="GridCell.Tab.0.right" timestamp="1578992553493">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1578992553493" />
+    <state width="1398" height="264" key="GridCell.Tab.1.bottom" timestamp="1578992553494">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.1.bottom/0.23.1440.827@0.23.1440.827" timestamp="1578992553494" />
+    <state width="1398" height="264" key="GridCell.Tab.1.center" timestamp="1578992553494">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.1.center/0.23.1440.827@0.23.1440.827" timestamp="1578992553494" />
+    <state width="1398" height="264" key="GridCell.Tab.1.left" timestamp="1578992553494">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.1.left/0.23.1440.827@0.23.1440.827" timestamp="1578992553494" />
+    <state width="1398" height="264" key="GridCell.Tab.1.right" timestamp="1578992553494">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.1.right/0.23.1440.827@0.23.1440.827" timestamp="1578992553494" />
+    <state x="209" y="60" width="1212" height="722" key="SettingsEditor" timestamp="1579060869203">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="209" y="60" width="1212" height="722" key="SettingsEditor/0.23.1440.827@0.23.1440.827" timestamp="1579060869203" />
+    <state x="385" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1579069336178">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="385" y="254" key="com.intellij.ide.util.TipDialog/0.23.1440.827@0.23.1440.827" timestamp="1579069336178" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="arrayOlines" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/chapter02$kNN.coverage" NAME="kNN Coverage Results" MODIFIED="1578989078343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

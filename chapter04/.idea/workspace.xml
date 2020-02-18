@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="226b93c4-7d7b-46f3-bcdd-46c34633b3c7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/bayes.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/nbc.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectId" id="1WYqWdiayuCSlTcsuVxDehoF25S" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sougouC" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sougouC" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sougouC" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.bayes">
+    <configuration name="bayes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="chapter04" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bayes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="nbc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="chapter04" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nbc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.bayes" />
+        <item itemvalue="Python.nbc" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="226b93c4-7d7b-46f3-bcdd-46c34633b3c7" name="Default Changelist" comment="" />
+      <created>1579336908251</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579336908251</updated>
+      <workItem from="1579336939049" duration="8607000" />
+      <workItem from="1579414480469" duration="12198000" />
+      <workItem from="1579506537648" duration="705000" />
+      <workItem from="1579536541187" duration="120000" />
+      <workItem from="1579780604400" duration="4000" />
+      <workItem from="1580543031291" duration="76000" />
+      <workItem from="1582016652068" duration="220000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579336971550">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.827@0.23.1440.827" timestamp="1579336971550" />
+    <state x="477" y="314" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1579425292661">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="477" y="314" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.827@0.23.1440.827" timestamp="1579425292661" />
+    <state width="1002" height="466" key="DebuggerActiveHint" timestamp="1579429586351">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1002" height="466" key="DebuggerActiveHint/0.23.1440.827@0.23.1440.827" timestamp="1579429586351" />
+    <state width="1398" height="163" key="GridCell.Tab.0.bottom" timestamp="1582016871806">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="163" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1582016871806" />
+    <state width="1398" height="163" key="GridCell.Tab.0.center" timestamp="1582016871805">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="163" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1582016871805" />
+    <state width="1398" height="163" key="GridCell.Tab.0.left" timestamp="1582016871805">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="163" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1582016871805" />
+    <state width="1398" height="163" key="GridCell.Tab.0.right" timestamp="1582016871806">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="163" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1582016871806" />
+    <state width="1398" height="433" key="GridCell.Tab.1.bottom" timestamp="1579432285864">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="433" key="GridCell.Tab.1.bottom/0.23.1440.827@0.23.1440.827" timestamp="1579432285864" />
+    <state width="1398" height="433" key="GridCell.Tab.1.center" timestamp="1579432285864">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="433" key="GridCell.Tab.1.center/0.23.1440.827@0.23.1440.827" timestamp="1579432285864" />
+    <state width="1398" height="433" key="GridCell.Tab.1.left" timestamp="1579432285863">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="433" key="GridCell.Tab.1.left/0.23.1440.827@0.23.1440.827" timestamp="1579432285863" />
+    <state width="1398" height="433" key="GridCell.Tab.1.right" timestamp="1579432285864">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1398" height="433" key="GridCell.Tab.1.right/0.23.1440.827@0.23.1440.827" timestamp="1579432285864" />
+    <state x="221" y="75" key="SettingsEditor" timestamp="1579428722511">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="221" y="75" key="SettingsEditor/0.23.1440.827@0.23.1440.827" timestamp="1579428722511" />
+    <state width="720" height="413" key="XDebugger.FullValuePopup" timestamp="1579425196579">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="720" height="413" key="XDebugger.FullValuePopup/0.23.1440.827@0.23.1440.827" timestamp="1579425196579" />
+    <state x="397" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1580543035362">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="397" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.827@0.23.1440.827" timestamp="1580543035362" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/nbc.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="vocabSList" />
+        <watch expression="vocabSList.index(word)" />
+        <watch expression="trainMatrix[0]" />
+        <watch expression="sum(trainGategory)" />
+        <watch expression="trainMatrix[i]" />
+        <watch expression="sum(trainMatrix[i])" />
+        <watch expression="p0Num" />
+        <watch expression="sum(vec2Classify * p1Vec)" />
+        <watch expression="log(pClass1)" />
+        <watch expression="sum(vec2Classify * p0Vec)" />
+        <watch expression="listOfTokens" />
+        <watch expression="textParse(open('/Users/yangshaojun/python_workspace/chapter04/email/ham/%d.txt' % i, 'r').read())" />
+        <watch expression="range(50)" />
+        <watch expression="trainingSet" />
+        <watch expression="len(trainingSet)" />
+        <watch expression="random.uniform(0, len(trainingSet))" />
+        <watch expression="int(random.uniform(0, len(trainingSet))) " />
+        <watch expression="raw" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/chapter04$nbc.coverage" NAME="nbc Coverage Results" MODIFIED="1579432065397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/chapter04$bayes.coverage" NAME="bayes Coverage Results" MODIFIED="1582016846901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

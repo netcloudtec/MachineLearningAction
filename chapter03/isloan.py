@@ -37,8 +37,9 @@ Parameters:
     dataSet - 数据集
 Returns:
     shannonEnt - 经验熵(香农熵)
+Modify:
+    2020-06-25
 """
-
 
 def calcShannonEnt(dataSet):
     numEntires = len(dataSet)  # 返回数据集的行数
@@ -63,13 +64,15 @@ Parameters:
     value - 需要返回的特征的值
 Returns:
     无
+Modify:
+    2020-06-25
 """
-
 
 def splitDataSet(dataSet, axis, value):
     retDataSet = []  # 创建返回的数据集列表
     for featVec in dataSet:  # 遍历数据集
         if featVec[axis] == value:
+            # list[0:5] 列表切片 索引值从0开始 不包含结束索引值
             reducedFeatVec = featVec[:axis]  # 去掉axis特征
             reducedFeatVec.extend(featVec[axis + 1:])  # 将符合条件的添加到返回的数据集
             retDataSet.append(reducedFeatVec)
@@ -83,6 +86,8 @@ Parameters:
     dataSet - 数据集
 Returns:
     bestFeature - 信息增益最大的(最优)特征的索引值
+Modify:
+    2020-06-25
 """
 
 
@@ -108,7 +113,16 @@ def chooseBestFeatureToSplit(dataSet):
     return bestFeature  # 返回信息增益最大的特征的索引值
 
 
-# classList 标签列表 返回标签数目最多的那个标签
+"""
+函数说明:统计classList中出现此处最多的元素(类标签)
+
+Parameters:
+    classList - 类标签列表
+Returns:
+    sortedClassCount[0][0] - 出现此处最多的元素(类标签)
+Modify:
+    020-06-25
+"""
 def majorityCnt(classList):
     classCount = {}
     for vote in classList:
@@ -118,13 +132,25 @@ def majorityCnt(classList):
     return sortedClassCount[0][0]
 
 
-# 创建树函数
+"""
+函数说明:创建决策树
+
+Parameters:
+    dataSet - 训练数据集
+    labels - 分类属性标签
+    featLabels - 存储选择的最优特征标签
+Returns:
+    myTree - 决策树
+Modify:
+    2020-06-25
+"""
 def createTree(dataSet, labels, featLabels):
     classList = [example[-1] for example in dataSet]  # 取分类标签(是否放贷:yes or no)
     if classList.count(classList[0]) == len(classList):  # 如果类别完全相同则停止继续划分
         return classList[0]
     if len(dataSet[0]) == 1 or len(labels) == 0:  # 遍历完所有特征时返回出现次数最多的类标签
         return majorityCnt(classList)
+
     bestFeat = chooseBestFeatureToSplit(dataSet)  # 选择最优特征
     bestFeatLabel = labels[bestFeat]  # 最优特征的标签
     featLabels.append(bestFeatLabel)
@@ -146,9 +172,13 @@ Parameters:
     myTree - 决策树
 Returns:
     numLeafs - 决策树的叶子结点的数目
+Author:
+    Jack Cui
+Blog:
+    http://blog.csdn.net/c406495762
+Modify:
+    2020-06-25
 """
-
-
 def getNumLeafs(myTree):
     numLeafs = 0  # 初始化叶子
     firstStr = next(iter(
@@ -161,7 +191,6 @@ def getNumLeafs(myTree):
             numLeafs += 1
     return numLeafs
 
-
 """
 函数说明:获取决策树的层数
 
@@ -169,8 +198,9 @@ Parameters:
     myTree - 决策树
 Returns:
     maxDepth - 决策树的层数
+Modify:
+    2020-06-25
 """
-
 
 def getTreeDepth(myTree):
     maxDepth = 0  # 初始化决策树深度
@@ -196,16 +226,16 @@ Parameters:
     nodeType - 结点格式
 Returns:
     无
-
+Modify:
+    2020-06-25
 """
-
 
 def plotNode(nodeTxt, centerPt, parentPt, nodeType):
     arrow_args = dict(arrowstyle="<-")  # 定义箭头格式
-    font = FontProperties(fname=r"/Users/yangshaojun/python_workspace/chapter03/font/simsun.ttc", size=14)  # 设置中文字体
+    font = FontProperties(fname=r"./font/simsun.ttc", size=14)  # 设置中文字体
     createPlot.ax1.annotate(nodeTxt, xy=parentPt, xycoords='axes fraction',  # 绘制结点
                             xytext=centerPt, textcoords='axes fraction',
-                            va="center", ha="center", bbox=nodeType, arrowprops=arrow_args, FontProperties=font)
+                            va="center", ha="center", bbox=nodeType, arrowprops=arrow_args, fontproperties=font)
 
 
 """
@@ -216,9 +246,9 @@ Parameters:
     txtString - 标注的内容
 Returns:
     无
+Modify:
+    2020-06-25
 """
-
-
 def plotMidText(cntrPt, parentPt, txtString):
     xMid = (parentPt[0] - cntrPt[0]) / 2.0 + cntrPt[0]  # 计算标注位置
     yMid = (parentPt[1] - cntrPt[1]) / 2.0 + cntrPt[1]
@@ -233,8 +263,9 @@ Parameters:
     nodeTxt - 结点名
 Returns:
     无
+Modify:
+    2020-06-25
 """
-
 
 def plotTree(myTree, parentPt, nodeTxt):
     decisionNode = dict(boxstyle="sawtooth", fc="0.8")  # 设置结点格式
@@ -256,7 +287,6 @@ def plotTree(myTree, parentPt, nodeTxt):
             plotMidText((plotTree.xOff, plotTree.yOff), cntrPt, str(key))
     plotTree.yOff = plotTree.yOff + 1.0 / plotTree.totalD
 
-
 """
 函数说明:创建绘制面板
 
@@ -264,8 +294,9 @@ Parameters:
     inTree - 决策树(字典)
 Returns:
     无
+Modify:
+    2020-06-25
 """
-
 
 def createPlot(inTree):
     fig = plt.figure(1, facecolor='white')  # 创建fig
@@ -290,8 +321,9 @@ Parameters:
     testVec - 测试数据列表，顺序对应最优特征标签
 Returns:
     classLabel - 分类结果
+Modify:
+    2020-06-25
 """
-
 
 def classify(inputTree, featLabels, testVec):
     firstStr = next(iter(inputTree))  # 获取决策树结点
@@ -308,15 +340,14 @@ def classify(inputTree, featLabels, testVec):
 
 if __name__ == '__main__':
     dataSet, features = createDataSet()
-    print(dataSet)
-    print(calcShannonEnt(dataSet))
-    print(splitDataSet(dataSet, 1, 1))
-    print(chooseBestFeatureToSplit(dataSet))
+    # print(calcShannonEnt(dataSet))
+    print(splitDataSet(dataSet, 0, 0))
+    print(chooseBestFeatureToSplit(dataSet))  # 选择最优特征
     featLabels = []
     myTree = createTree(dataSet, features, featLabels)
     print(myTree)
     createPlot(myTree)
-    # 使用决策树进行分类
+    # # 使用决策树进行分类
     testVec = [1, 0]  # 测试数据
     print(featLabels)
     result = classify(myTree, featLabels, testVec)

@@ -143,21 +143,21 @@ def predictAction(filename):
 
 if __name__ == '__main__':
     dataSet, labels = createDataSet()  # 创建数据集
-    shannonEnt = calcShannonEnt(dataSet)  # 计算数据集熵
-    print(shannonEnt)
-    retDataSet = splitDataSet(dataSet, 0, 1)  # 拆分数据集
-    print(retDataSet)
+    # shannonEnt = calcShannonEnt(dataSet)  # 计算数据集熵
+    # print(shannonEnt)
+    # retDataSet = splitDataSet(dataSet, 0, 1)  # 拆分数据集
+    # print(retDataSet)
     bestFeature = chooseBestFeatureToSplit(dataSet)  # 选取最好的数据集划分方式
     print(bestFeature)
     # mytree = createTree(dataSet, labels)
-    mytree = treePlotter.retrieveTree(0)
-    print(mytree)
-    classRet = classify(mytree, labels, [1, 1])
-    print(classRet)
-    storeTree(mytree, 'classifierStorage.txt')  # 保存决策树
-    print(grabTree('classifierStorage.txt'))  # 读取决策树
-    # 预测隐形眼镜类型
-    lensesTree = predictAction("/Users/yangshaojun/python_workspace/chapter03/dataset/lenses.txt")
-    print(lensesTree)
-    # 绘制树形图
-    treePlotter.createPlot(lensesTree)
+    # mytree = treePlotter.retrieveTree(0)
+    # print(mytree)
+    # classRet = classify(mytree, labels, [1, 1])
+    # print(classRet)
+    # storeTree(mytree, 'classifierStorage.txt')  # 保存决策树
+    # print(grabTree('classifierStorage.txt'))  # 读取决策树
+    # # 预测隐形眼镜类型
+    # lensesTree = predictAction("/Users/yangshaojun/python_workspace/chapter03/dataset/lenses.txt")
+    # print(lensesTree)
+    # # 绘制树形图
+    # treePlotter.createPlot(lensesTree)

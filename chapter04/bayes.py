@@ -7,6 +7,7 @@ from numpy import *
 
 # 训练样本 （这里的训练样本已经被切分为了词条）
 def loadDataSet():
+    # 定义一个二维列表；整个结构可以看作是一个类似于矩阵的数据结构
     postingList = [['my', 'dog', 'has', 'flea', 'problems', 'help', 'please'],  # 切分的词条
                    ['maybe', 'not', 'take', 'him', 'to', 'dog', 'park', 'stupid'],
                    ['my', 'dalmation', 'is', 'so', 'cute', 'I', 'love', 'him'],
@@ -32,10 +33,10 @@ Returns:
 
 
 def createVocabList(dataSet):
-    vocabSet = set([])  # 创建一个空集
+    vocabSet = set([])  # 创建一个无序不重复空集，可以使用大括号{} 或 set() 函数来创建一个集合（Set）
     for document in dataSet:
         vocabSet = vocabSet | set(document)  # ｜ 创建两个集合的并集
-    return list(vocabSet)
+    return list(vocabSet)  # 集合转为列表
 
 
 """
@@ -50,10 +51,10 @@ Returns:
 
 
 def setOfWords2Vec(vocabSList, inputSet):
-    returnVec = [0] * len(vocabSList)  # 创建一个一行 len(vocabSList) 列 元素值为0的矩阵
+    returnVec = [0] * len(vocabSList)  # 创建一个一行 len(vocabSList) 列；元素值为0的矩阵
     for word in inputSet:
         if word in vocabSList:
-            returnVec[vocabSList.index(word)] = 1  # 获取指定单词的索引
+            returnVec[vocabSList.index(word)] = 1  # 获取指定单词的索引，并指定索引位置赋值为1
         else:
             print("the word:%s is not in my Vocabulary!" % word)
     return returnVec
@@ -61,7 +62,7 @@ def setOfWords2Vec(vocabSList, inputSet):
 
 """
 函数说明:朴素贝叶斯分类器训练函数 
-        求出的结果作为后续分类使用
+       求出的结果作为后续分类使用
 Parameters:
     trainMatrix - 训练文档矩阵，即setOfWords2Vec返回的returnVec构成的矩阵
     trainCategory - 训练类别标签向量，即loadDataSet返回的classVec
@@ -98,6 +99,8 @@ sum(vec2Classify * p1Vec) + log(pClass1)
 p1Vec本身是对数函数，vec2Classify * p1Vec不为0的就是要预测的特征
 sum：这里的sum是对对数函数的sum，变换后也就是各特征概率的相乘
 """
+
+
 def classifyNB(vec2Classify, p0Vec, p1Vec, pClass1):
     p1 = sum(vec2Classify * p1Vec) + log(pClass1)  # 自然对数计算 ln(a*b)=ln(a)+ln(b)
     p0 = sum(vec2Classify * p0Vec) + log(1.0 - pClass1)

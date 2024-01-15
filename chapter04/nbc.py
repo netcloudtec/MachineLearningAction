@@ -62,7 +62,7 @@ def TextProcessing(folder_path, test_size=0.2):
     # # 根据键的值倒序排序
     all_words_tuple_list = sorted(all_words_dict.items(), key=lambda f: f[1], reverse=True)
     all_words_list, all_words_nums = zip(*all_words_tuple_list)  # 解压缩
-    all_words_list = list(all_words_list)  # 转换成列表
+    all_words_list = list(all_words_list)  # 转换成列表 去重后的训练集单词
     return all_words_list, train_data_list, test_data_list, train_class_list, test_class_list
 
 
@@ -95,7 +95,6 @@ Returns:
 	feature_words - 特征集
 """
 
-
 def words_dict(all_words_list, deleteN, stopwords_set=set()):
     feature_words = []  # 特征列表
     n = 1
@@ -119,14 +118,9 @@ Parameters:
 Returns:
 	train_feature_list - 训练集向量化列表
 	test_feature_list - 测试集向量化列表
-Author:
-	Jack Cui
-Blog:
-	http://blog.csdn.net/c406495762
 Modify:
-	2017-08-22
+	2020-06-30
 """
-
 
 def TextFeatures(train_data_list, test_data_list, feature_words):
     def text_features(text, feature_words):  # 出现在特征集中，则置1
@@ -148,39 +142,38 @@ Parameters:
 	test_class_list - 测试集分类标签
 Returns:
 	test_accuracy - 分类器精度
-Author:
-	Jack Cui
-Blog:
-	http://blog.csdn.net/c406495762
 Modify:
-	2017-08-22
+	2020-06-30
 """
-
 
 def TextClassifier(train_feature_list, test_feature_list, train_class_list, test_class_list):
     classifier = MultinomialNB().fit(train_feature_list, train_class_list)
     test_accuracy = classifier.score(test_feature_list, test_class_list)
-    return test_accuracy
+    return test_accuracy,classifier
 
 
 if __name__ == '__main__':
     # 文本预处理
-    folder_path = '/Users/yangshaojun/python_workspace/chapter04/sougouC/Sample'  # 训练集存放地址
-    all_words_list, train_data_list, test_data_list, train_class_list, test_class_list = TextProcessing(folder_path,
-                                                                                                        test_size=0.2)
-
-    # 生成stopwords_set
-    stopwords_file = '/Users/yangshaojun/python_workspace/chapter04/sougouC/stopwords_cn.txt'
-    stopwords_set = MakeWordsSet(stopwords_file)
-    # feature_words = words_dict(all_words_list, 100, stopwords_set)
-    # print(feature_words)
+    folder_path = './sougouC/Sample'  # 训练集存放地址
+    all_words_list, train_data_list, test_data_list, train_class_list, test_class_list = TextProcessing(folder_path,test_size=0.2)
+    # all_words_list ：训练集中单词数目从大到小排序 去重后的单词列表
+    # train_data_list：没有去重的训练集 ，test_data_list没有去重的测试集
+    # train_class_list 训练集标签 ，test_class_list 测试集标签
+    # # 生成stopwords_set
+    stopwords_file = './sougouC/stopwords_cn.txt'
+    stopwords_set = MakeWordsSet(stopwords_file) # 停用词列表 去重后的结果
+    # 从训练集中提取特征单词：去掉前100个高频词和 停用词
+    feature_words = words_dict(all_words_list, 100, stopwords_set)
+    print(feature_words)
 
     test_accuracy_list = []
-    deleteNs = range(0, 1000, 20)  # 0 20 40 60 ... 980
+    deleteNs = range(0, 1000, 20)  # 0 20 40 60 ... 980 交叉验证
     for deleteN in deleteNs:
         feature_words = words_dict(all_words_list, deleteN, stopwords_set)
+        # 将训练集和测试集进行向量化
         train_feature_list, test_feature_list = TextFeatures(train_data_list, test_data_list, feature_words)
-        test_accuracy = TextClassifier(train_feature_list, test_feature_list, train_class_list, test_class_list)
+        # 进行分类和测试
+        test_accuracy ,classifier= TextClassifier(train_feature_list, test_feature_list, train_class_list, test_class_list)
         test_accuracy_list.append(test_accuracy)
 
     plt.figure()
@@ -189,5 +182,17 @@ if __name__ == '__main__':
     plt.xlabel('deleteNs')
     plt.ylabel('test_accuracy')
     plt.show()
+
+    test_accuracy_list = []
+    feature_words = words_dict(all_words_list, 450, stopwords_set)# 将训练集中去掉停用词和前450个高频词
+    # 将训练集和测试集进行向量化
+    train_feature_list, test_feature_list = TextFeatures(train_data_list, test_data_list, feature_words)
+    # 训练模型进行分类
+    test_accuracy,classifier = TextClassifier(train_feature_list, test_feature_list, train_class_list, test_class_list)
+    # 预测
+    predict=classifier.predict(test_feature_list)
+    print(predict)
+    test_accuracy_list.append(test_accuracy)
+    print(test_accuracy_list)
 
 

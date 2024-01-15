@@ -3,9 +3,6 @@ from math import log
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
 from numpy import *
-import re
-import random
-
 
 
 # 训练样本 （这里的训练样本已经被切分为了词条）
@@ -43,7 +40,6 @@ def createVocabList(dataSet):
 
 """
 函数说明:根据词汇表将训练样本 转为词向量
-
 Parameters:
     vocabSList:词汇表
     inputSet：训练样本
@@ -73,7 +69,6 @@ Returns:
     p0Vect - 侮辱类的条件概率数组
     p1Vect - 非侮辱类的条件概率数组
     pAbusive - 文档属于侮辱类的概率
-
 """
 
 
@@ -98,6 +93,11 @@ def trainNB0(trainMatrix, trainGategory):
     return p0Vect, p1Vect, pAbusive
 
 
+"""
+sum(vec2Classify * p1Vec) + log(pClass1) 
+p1Vec本身是对数函数，vec2Classify * p1Vec不为0的就是要预测的特征
+sum：这里的sum是对对数函数的sum，变换后也就是各特征概率的相乘
+"""
 def classifyNB(vec2Classify, p0Vec, p1Vec, pClass1):
     p1 = sum(vec2Classify * p1Vec) + log(pClass1)  # 自然对数计算 ln(a*b)=ln(a)+ln(b)
     p0 = sum(vec2Classify * p0Vec) + log(1.0 - pClass1)
@@ -122,64 +122,18 @@ def testingNB():
     print(testEntry, 'classified as :', classifyNB(thisDoc, p0V, p1V, pAb))
 
 
-# 垃圾邮件分类
-"""
-函数说明:接收一个大字符串并将其解析为字符串列表
-Parameters:
-    bigString
-Returns:
-    无
-"""
-def textParse(bigString):                                                   #将字符串转换为字符列表
-    listOfTokens = re.split(r'\W+', bigString)                              #将特殊符号作为切分标志进行字符串切分，即非字母、非数字
-    return [tok.lower() for tok in listOfTokens if len(tok) > 2]            #除了单个字母，例如大写的I，其它单词变成小写
-
-# 使用朴素贝叶斯进行垃圾邮件过滤
-def spamTest():
-    docList = [];
-    classList = [];
-    for i in range(1, 26):  # 遍历25个txt文件
-        wordList = textParse(open('/Users/yangshaojun/python_workspace/chapter04/email/spam/%d.txt' % i, 'r').read())  # 读取每个垃圾邮件，并字符串转换成字符串列表
-        docList.append(wordList)
-        classList.append(1)  # 标记垃圾邮件，1表示垃圾文件
-        wordList = textParse(open('/Users/yangshaojun/python_workspace/chapter04/email/ham/%d.txt' % i, 'r').read())  # 读取每个非垃圾邮件，并字符串转换成字符串列表
-        docList.append(wordList)
-        classList.append(0)  # 标记非垃圾邮件，1表示垃圾文件
-    vocabList = createVocabList(docList)  # 创建词汇表，不重复
-    trainingSet = list(range(50));
-    testSet = []  # 创建存储训练集的索引值的列表和测试集的索引值的列表
-    for i in range(10):  # 从50个邮件中，随机挑选出40个作为训练集,10个做测试集
-        randIndex = int(random.uniform(0, len(trainingSet)))  # 随机选取索索引值
-        testSet.append(trainingSet[randIndex])  # 添加测试集的索引值
-        del (trainingSet[randIndex])  # 在训练集列表中删除添加到测试集的索引值
-    trainMat = [];
-    trainClasses = []  # 创建训练集矩阵和训练集类别标签系向量
-    for docIndex in trainingSet:  # 遍历训练集
-        trainMat.append(setOfWords2Vec(vocabList, docList[docIndex]))  # 将生成的词集模型添加到训练矩阵中
-        trainClasses.append(classList[docIndex])  # 将类别添加到训练集类别标签系向量中
-    p0V, p1V, pSpam = trainNB0(array(trainMat), array(trainClasses))  # 训练朴素贝叶斯模型
-    errorCount = 0  # 错误分类计数
-    for docIndex in testSet:  # 遍历测试集
-        wordVector = setOfWords2Vec(vocabList, docList[docIndex])  # 测试集的词集模型
-        if classifyNB(array(wordVector), p0V, p1V, pSpam) != classList[docIndex]:  # 如果分类错误
-            errorCount += 1  # 错误计数加1
-            print("分类错误的测试集：", docList[docIndex])
-    print('错误率：%.2f%%' % (float(errorCount) / len(testSet) * 100))
-
-
 if __name__ == '__main__':
-    postingList, classVec = loadDataSet()
-    myVocabList = createVocabList(postingList)
-    print(myVocabList)
-    wordVec = setOfWords2Vec(myVocabList, postingList[0])
-    print(wordVec)
-    trainMat = []
-    for postinDoc in postingList:
-        trainMat.append(setOfWords2Vec(myVocabList, postinDoc))
-    print(trainMat)
-    p0V, p1V, pAb = trainNB0(trainMat, classVec)
-    print(p0V)
-    print(p1V)
-    print(pAb)
+    # postingList, classVec = loadDataSet()
+    # myVocabList = createVocabList(postingList)
+    # print(myVocabList)
+    # wordVec = setOfWords2Vec(myVocabList, postingList[0])
+    # print(wordVec)
+    # trainMat = []  # 训练集
+    # for postinDoc in postingList:
+    #     trainMat.append(setOfWords2Vec(myVocabList, postinDoc))
+    # print(trainMat)
+    # p0V, p1V, pAb = trainNB0(trainMat, classVec)
+    # print(p0V)
+    # print(p1V)
+    # print(pAb)
     testingNB()
-    spamTest()
